@@ -1,0 +1,17 @@
+
+---
+
+# 🧠 Diagnostic Manager Example (`src/diagnostic_manager.c`)
+
+```c
+#include "diagnostic_manager.h"
+#include "dtc_handler.h"
+#include <stdio.h>
+
+void handle_service_0x22(uint16_t did) {
+    printf("Reading DID: 0x%04X\n", did);
+}
+
+void handle_service_0x19(uint8_t subFunction) {
+    dtc_read_all();
+}
