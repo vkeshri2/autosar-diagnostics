@@ -14,7 +14,7 @@ A minimal AUTOSAR-inspired diagnostic implementation with UDS service handlers, 
 - [Sample UDS Requests](#sample-uds-requests)
 - [Contributing](#contributing)
 - [License](#license)
-
+- ![Architecture](docs/architecture.png)
 ---
 
 ## ✅ Features
