@@ -1,25 +1,53 @@
-# autosar-diagnostics
-A sample diagnostic stack for AUTOSAR-based ECUs with UDS service implementations and DTC handling.
+# AUTOSAR Diagnostic Stack 🚗🧰  
+A minimal AUTOSAR-inspired diagnostic implementation with UDS service handlers, DTC simulation, and fault memory support.
 
-# AUTOSAR Diagnostic Stack
+![GitHub last commit](https://img.shields.io/github/last-commit/vkeshri2/autosar-diagnostics)
+![GitHub license](https://img.shields.io/github/license/vkeshri2/autosar-diagnostics)
 
-This repository contains a simplified implementation of a UDS-based diagnostic stack, inspired by AUTOSAR architecture. It includes basic services, DTC handling, and example configuration files.
+---
 
-## Features
-- Support for key UDS services (0x10, 0x11, 0x14, 0x19, 0x22, etc.)
-- DTC read/clear
+## 📚 Table of Contents
+- [Features](#features)
+- [Folder Structure](#folder-structure)
+- [How to Run](#how-to-run)
+- [Architecture](#architecture)
+- [Sample UDS Requests](#sample-uds-requests)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## ✅ Features
+
+- Support for key UDS services:
+  - Diagnostic Session Control (0x10)
+  - ECU Reset (0x11)
+  - Clear DTCs (0x14)
+  - Read DTC Information (0x19)
+  - ReadDataByIdentifier (0x22)
+- DTC read/clear operations
 - Configurable DIDs
 - Fault memory simulation
 - Python script for config generation
 
-## Folder Structure
-- `src/`: Source code of the diagnostic manager
-- `config/`: Example config files for DIDs and DTCs
-- `docs/`: Design documentation
-- `scripts/`: Automation tools (e.g., DID generator)
-- `test/`: Unit test samples
+---
 
-## How to Run
-```sh
+## 📁 Folder Structure
+
+| Folder      | Description                                         |
+|-------------|-----------------------------------------------------|
+| `src/`      | Source code of the diagnostic manager               |
+| `config/`   | Example config files for DIDs and DTCs              |
+| `docs/`     | Design documentation and architecture diagrams      |
+| `scripts/`  | Automation tools (e.g., DID config generator)       |
+| `test/`     | Unit test samples for diagnostic functionality      |
+
+---
+
+## 🚀 How to Run
+
+Ensure you have `gcc` installed. Then:
+
+```bash
 gcc src/*.c -o diag_test
 ./diag_test
