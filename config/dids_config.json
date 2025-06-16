@@ -1,0 +1,8 @@
+{
+  "DIDs": {
+    "F190": {
+      "description": "VIN",
+      "length": 17
+    }
+  }
+}
