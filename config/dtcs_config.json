@@ -1,0 +1,8 @@
+{
+  "DTCs": {
+    "123456": {
+      "description": "Engine Overheat",
+      "severity": "high"
+    }
+  }
+}
