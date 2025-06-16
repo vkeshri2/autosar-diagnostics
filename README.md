@@ -13,7 +13,8 @@ A minimal AUTOSAR-inspired diagnostic implementation with UDS service handlers, 
 - [Architecture](#architecture)
 - [Sample UDS Requests](#sample-uds-requests)
 - [Contributing](#contributing)
-- [License](#license)
+- [License](#license) - This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 - ![Architecture](docs/architecture.png)
 ---
 
