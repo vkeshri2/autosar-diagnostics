@@ -44,6 +44,33 @@ A minimal AUTOSAR-inspired diagnostic implementation with UDS service handlers, 
 | `test/`     | Unit test samples for diagnostic functionality      |
 
 ---
+# Complex Device Driver Example for MCAL to RTE Communication
+
+This repository demonstrates a simplified example of complex device drivers communicating
+between the MCAL (Microcontroller Abstraction Layer) and the RTE (Runtime Environment) in
+an AUTOSAR-like architecture.
+
+## Structure
+
+- `mcal/`: Contains CAN driver source and configuration.
+- `rte/`: Contains RTE interface for CAN communication.
+- `include/`: Common typedefs and definitions.
+- `src/main.c`: Example usage and initialization.
+- `Makefile`: Build instructions.
+
+## Features
+
+- CAN driver with TX and RX buffer management.
+- RTE interface to abstract CAN driver calls.
+- Simulated interrupt-driven communication.
+- Configurable via `Mcal_Cfg.h`.
+
+## Usage
+
+- Extend drivers to your hardware.
+- Integrate with AUTOSAR stack layers.
+- Build with `make`.
+
 
 ## 🚀 How to Run
 
